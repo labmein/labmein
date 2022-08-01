@@ -77,17 +77,27 @@ function contacts() {
 
     contacts__item.forEach((element) => {
         const contacts__img = element.querySelector(".contacts__img")
+        const contacts__text = element.querySelector(".contacts__text")
+
         contacts__img.addEventListener('click', evt => {
             evt.preventDefault()
-            if (element.classList.contains("active")) {
-                element.classList.remove("active")
+            if (contacts__img.classList.contains("contacts__img--active")) {
+                // element.classList.remove("active")
+                contacts__img.classList.remove("contacts__img--active")
+                contacts__text.classList.remove("contacts__text--active")
                 current = undefined
             } else {
                 if (current !== undefined) {
-                    current.classList.remove("active")
+                    // current.classList.remove("active")
+                    const current_img = current.querySelector(".contacts__img")
+                    current_img.classList.remove("contacts__img--active")
+                    const current_text = current.querySelector(".contacts__text")
+                    current_text.classList.remove("contacts__text--active")
                 }
                 current = element
-                element.classList.add("active")
+                contacts__img.classList.add("contacts__img--active")
+                contacts__text.classList.add("contacts__text--active")
+                // element.classList.add("active")
             }
         })
     })
