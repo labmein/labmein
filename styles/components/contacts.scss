@@ -1,0 +1,112 @@
+.contacts {
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        gap: 90px;
+        padding: 76px 80px 88px 74px;
+    }
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        // gap: 40px;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__img {
+        position: relative;
+        transition: 1s;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:not(:last-child) {
+
+        }
+    }
+
+    &__text {
+        opacity: 0;
+        width: 0px;
+        text-align: left;
+        letter-spacing: -0.02em;
+        font-size: $h5FontSize;
+        font-weight: 500;
+        padding: 0;
+        background: #113E3E;
+        color: $backgroundColor;
+        border-radius: 360px;
+        z-index: -1;
+        transition: 1s;
+    }
+
+    &__address {
+        font-size: 24px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &.active > .contacts__img {
+            left: -80px;
+        }
+
+        &.active > .contacts__text {
+            opacity: 1;
+            width: fit-content;
+            padding: 3px 90px 16px 15px;
+        }
+    }
+
+    &__map {
+        border-radius: 50px;
+    }
+}
+
+// .gmail__img {
+//     position: relative;
+
+//     &::before {
+//         content: "Labmein@gmail.com";
+//         position: absolute;
+//         width: fit-content;
+//         text-align: left;
+//         letter-spacing: -0.02em;
+//         font-weight: 500;
+//         padding: 3px 108px 16px 15px;
+//         background: #113E3E;
+//         color: $backgroundColor;
+//         border-radius: 360px;
+//         z-index: -1;
+//     }
+// }
+
+// .gmail__text {
+//     position: relative;
+//     width: fit-content;
+//     text-align: left;
+//     letter-spacing: -0.02em;
+//     font-weight: 500;
+//     padding: 3px 108px 16px 15px;
+//     background: #113E3E;
+//     color: $backgroundColor;
+//     border-radius: 360px;
+//     z-index: -1;
+
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         background-image: url("../../img/icons/gmail.svg");
+//         width: 88px;
+//         height: 88px;
+//         right: 0;
+//         top: -30%;
+//     }
+// }

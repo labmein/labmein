@@ -1,0 +1,52 @@
+.partners {
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 74px 80px 80px;
+    }
+}
+
+.skolkovo__text, .roscongress__text, .sber__text, .encata__text, .karfidovlab__text, .rudn__text {
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.skolkovo {
+    position: relative;
+    // cursor: pointer;
+
+    &:hover {
+
+        .skolkovo__text {
+            display: block;
+        }
+    }
+}
+
+.roscongress {
+
+    &:hover {
+        
+    }
+}
+
+.sber {
+
+}
+
+.encata {
+
+}
+
+.karfidovlab {
+
+}
+
+.rundn {
+
+}

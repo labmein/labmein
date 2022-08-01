@@ -1,0 +1,41 @@
+$h1FontSize: 120px;
+$h2FontSize: 45px;
+$h3FontSize: 40px;
+$h4fontSize: 35px;
+$h5FontSize: 30px;
+$pFontSize: 25px;
+
+$btnFontSize: 35px;
+
+$mainColor: #339FD5;
+$addColor: #336099;
+$backgroundColor: #ffffff;
+$textColor: #000000;
+
+$mainFontFamily: 'Kino';
+$addFontFamily: 'Golos UI';
+
+@font-face {
+    font-family: "Kino";
+    src: url("../fonts/KINO/Kino-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Golos UI";
+    src: url("../fonts/Golos/Golos-UI_Regular.ttf");
+}
+
+
+@import "https://cdnjs.cloudfare.com/ajax/normalize.css";
+@import './normilize.css';
+
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/contacts.scss";
+@import "components/partners.scss";
+@import "components/principles.scss";
+@import "components/idea.scss";
+@import "components/accelerator.scss";
+@import "components/btn.scss";
+@import "components/descriptions.scss";
+@import "layout";

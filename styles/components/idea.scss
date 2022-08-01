@@ -1,0 +1,15 @@
+.idea {
+
+    &__container {
+        display: flex;
+        gap: 148px;
+        padding: 100px 82px 80px 72px;
+    }
+
+    &__text {
+        text-align: center;
+        border: 0.5px solid $textColor;
+        border-radius: 50px;
+        padding: 32px 28px;
+    }
+}

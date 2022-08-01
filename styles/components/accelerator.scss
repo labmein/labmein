@@ -1,0 +1,111 @@
+.accelerator {
+
+    &__container {
+        padding: 66px 126px 57px 106px;
+    }
+
+    &__content {
+        padding-top: 20px;
+        padding-bottom: 29px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 34px;
+    }
+
+    &__buttons {
+        position: absolute;
+        display: flex;
+        float: right;
+        gap: 20px;
+    }
+
+    &__images {
+        position: relative;
+        width: 740px;
+        height: 450px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    &__items {
+        position: relative;
+        height: 330px;
+        width: 470px;
+    }
+
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    &__opacity {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__swiper_button {
+
+        &:hover {
+            cursor: pointer;
+
+            circle {
+                stroke: $mainColor;
+            }
+
+            path {
+                fill: $mainColor;
+            }
+            
+        }
+    }
+}
+
+.swiper {
+
+    &__wrapper {
+        margin-bottom: 57px;
+    }
+
+    &__slide {
+        display: -webkit-box;
+        gap: 40px;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    &__block {
+        width: 116px;
+        height: 14px;
+        background: #113E3E;
+        border-radius: 35px;
+        border: none;
+
+        &--active {
+            background: #4D2424;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

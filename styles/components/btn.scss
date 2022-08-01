@@ -1,0 +1,11 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: $addColor;
+    border-radius: 20px;
+    width: 231px;
+    height: 62px;
+}

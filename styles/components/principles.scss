@@ -1,0 +1,21 @@
+.principles {
+
+    &__container {
+        display: flex;
+        gap: 130px;
+        padding: 80px 72px 80px 75px;
+    }
+
+    &__blocks {
+
+    }
+
+    &__block {
+        display: flex;
+        gap: 34px;
+
+        &:not(:last-child) {
+            margin-bottom: 69px;
+        }
+    }
+}
